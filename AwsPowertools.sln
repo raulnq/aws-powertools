@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorldApi", "src\HelloWorldApi\HelloWorldApi.csproj", "{7D4CA076-4978-42EB-94DB-B7F966FE178B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5330C6F9-FBDE-4D18-A026-4855F6915D19}"
+	ProjectSection(SolutionItems) = preProject
+		template.yml = template.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D4CA076-4978-42EB-94DB-B7F966FE178B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D4CA076-4978-42EB-94DB-B7F966FE178B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D4CA076-4978-42EB-94DB-B7F966FE178B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D4CA076-4978-42EB-94DB-B7F966FE178B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7948D80A-188E-4645-8FD8-9BC44BB7682B}
+	EndGlobalSection
+EndGlobal

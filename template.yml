@@ -1,0 +1,33 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  AWS PowerTools
+
+Globals:
+  Function:
+    Environment:
+      Variables:
+        POWERTOOLS_SERVICE_NAME: myfunction
+        POWERTOOLS_LOG_LEVEL: Debug
+        POWERTOOLS_TRACER_CAPTURE_RESPONSE: true
+        POWERTOOLS_TRACER_CAPTURE_ERROR: true
+        POWERTOOLS_METRICS_NAMESPACE: mymetrics
+
+Resources:
+  MyFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 60
+      MemorySize: 512
+      Tracing: Active
+      Runtime: dotnet6
+      Architectures:
+        - x86_64    
+      Handler: HelloWorldApi::HelloWorldApi.Function::FunctionHandler
+      CodeUri: ./src/HelloWorldApi/
+      Events:
+        ListPosts:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get
